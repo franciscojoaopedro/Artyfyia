@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  font-family: monospace;
+}
+
+body{
+    background-color: #121212;
+    height: 100vh;
+}
+header{
+    background-color: #121212; 
+    padding: 16px;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-nav{
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+}
+
+.btn-gtp{
+    color: white;
+    transition: all .7s;
+}
+.btn-gtp:hover{
+    border-bottom: 2px  solid #4ae8cb;
+    transform: scale(2);
+}
+main{
+    width: 100%; display: flex;justify-content: center;align-items: center;flex-direction: column; 
+}
+
+.content-cards{
+    display: flex; justify-content: space-between;  align-items: center; width: 100%; padding: 0px 240px; 
+}
+
+
+/* Conteudos do card chat-gpt*/
+.card-gpt{
+    display: flex;justify-content: flex-start; align-items: flex-start; width: 45%; background-color:
+             #fff; flex-direction: column; border-radius: 8px; padding: 14px;
+             cursor: pointer;
+             transition:  1.9s;
+            
+}
+.card-gpt:hover{
+    box-shadow: 10px  10px 10px rgba(74, 232, 203,0.7);
+    transform: scale(0.9);
+}
+
+/* Conteudos do card dall-e*/
+.card-dall-e{
+    display: flex;justify-content: flex-start; align-items: flex-start; width: 45%; background-color:
+                 #fff; flex-direction: column; border-radius: 8px; padding: 14px;
+                 cursor: pointer;
+                 transition: 1.9s;
+}
+.card-dall-e:hover{
+    zoom: normal;
+    box-shadow: 10px  10px 10px rgba(74, 232, 203,0.7);
+    transform: scale(0.9);
+}
+
+
+
+
+footer{
+    width: 100%; position: absolute; bottom: 0;  padding: 16px; background-color: #131c1bbe;
+}
+
+.IA_Letter{
+color: #4ae8cb;
+transition: 2.5s;
+animation: letter infinite;
+
+}
+
+@media screen and (max-width: 700px) {
+    .content-cards{
+        padding: 0 50px;
+        flex-direction: column;
+        margin-bottom: 24px;
+        gap: 5px;
+    }
+    footer{
+        width: 100%; position: absolute; bottom: 0;  padding: 16px; background-color: #131c1bbe;
+        
+    }
+    .dica{
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dica h1{
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@keyframes letter{ 
+    0%{
+       
+        text-transform: lowercase;
+    }
+    50%{
+        transform: rotateX('angle');
+
+    }
+    100%{
+        transform: rotateX('angle');
+        
+    }
+}

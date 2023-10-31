@@ -1,0 +1,1 @@
+/*Essa ferramenta pode ser usada para criar arte, ilustrações e designs com base em comandos de texto ou instruções dadas ao sistema.*/
